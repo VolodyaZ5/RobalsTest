@@ -1,0 +1,108 @@
+﻿<Window x:Class="SummOfWeights.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SummOfWeights"
+        mc:Ignorable="d"
+        Title="Сложение грузов" Height="544" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="#FF4678AA" Loaded="Window_Loaded">
+
+    <Grid>
+        <Label x:Name="lblWeightInfo" Content="Масса (г)" Height="31" Margin="526,117,0,0" Width="123" VerticalAlignment="Top" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Background="#FFD6D6D6"/>
+        <Label x:Name="lblAngleInfo" Content="Угол (°)" Height="31" Margin="652,117,0,0" Width="123" VerticalAlignment="Top" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Background="#FFD6D6D6"/>
+
+        <CheckBox x:Name="chkWeight1" HorizontalAlignment="Left" Margin="400,150,0,0" VerticalAlignment="Top" Height="22" Width="22" HorizontalContentAlignment="Center" Checked="chkWeight1_Checked"/>
+        <CheckBox x:Name="chkWeight2" HorizontalAlignment="Left" Margin="400,175,0,0" VerticalAlignment="Top" Height="22" Width="22" HorizontalContentAlignment="Center" Checked="chkWeight2_Checked"/>
+        <CheckBox x:Name="chkWeight3" HorizontalAlignment="Left" Margin="400,199,0,0" VerticalAlignment="Top" Height="22" Width="22" HorizontalContentAlignment="Center" Checked="chkWeight3_Checked"/>
+        <CheckBox x:Name="chkWeight4" HorizontalAlignment="Left" Margin="400,223,0,0" VerticalAlignment="Top" Height="22" Width="22" HorizontalContentAlignment="Center" Checked="chkWeight4_Checked"/>
+        <CheckBox x:Name="chkWeight5" HorizontalAlignment="Left" Margin="400,247.5,0,0" VerticalAlignment="Top" Height="22" Width="22" HorizontalContentAlignment="Center" Checked="chkWeight5_Checked"/>
+        <CheckBox x:Name="chkWeight6" HorizontalAlignment="Left" Margin="400,272,0,0" VerticalAlignment="Top" Height="22" Width="22" HorizontalContentAlignment="Center" Checked="chkWeight6_Checked"/>
+        <CheckBox x:Name="chkWeight7" HorizontalAlignment="Left" Margin="400,296,0,0" VerticalAlignment="Top" Height="22" Width="22" HorizontalContentAlignment="Center" Checked="chkWeight7_Checked"/>
+        <CheckBox x:Name="chkWeight8" HorizontalAlignment="Left" Margin="400,320,0,0" VerticalAlignment="Top" Height="22" Width="22" HorizontalContentAlignment="Center" Checked="chkWeight8_Checked"/>
+
+        <Label x:Name="lblWeight1" Content="Груз 1" HorizontalAlignment="Left" Margin="424,151,0,0" VerticalAlignment="Top" Height="22" Width="100" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11" Background="#FFD6D6D6"/>
+        <Label x:Name="lblWeight2" Content="Груз 2" HorizontalAlignment="Left" Margin="424,175,0,0" VerticalAlignment="Top" Height="22" Width="100" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11" Background="#FFD6D6D6"/>
+        <Label x:Name="lblWeight3" Content="Груз 3" HorizontalAlignment="Left" Margin="424,199,0,0" VerticalAlignment="Top" Height="22" Width="100" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11" Background="#FFD6D6D6"/>
+        <Label x:Name="lblWeight4" Content="Груз 4" HorizontalAlignment="Left" Margin="424,223,0,0" VerticalAlignment="Top" Height="22" Width="100" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11" Background="#FFD6D6D6"/>
+        <Label x:Name="lblWeight5" Content="Груз 5" HorizontalAlignment="Left" Margin="424,248,0,0" VerticalAlignment="Top" Height="22" Width="100" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11" Background="#FFD6D6D6"/>
+        <Label x:Name="lblWeight6" Content="Груз 6" HorizontalAlignment="Left" Margin="424,272,0,0" VerticalAlignment="Top" Height="22" Width="100" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11" Background="#FFD6D6D6"/>
+        <Label x:Name="lblWeight7" Content="Груз 7" HorizontalAlignment="Left" Margin="424,296,0,0" VerticalAlignment="Top" Height="22" Width="100" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11" Background="#FFD6D6D6"/>
+        <Label x:Name="lblWeight8" Content="Груз 8" HorizontalAlignment="Left" Margin="424,320,0,0" VerticalAlignment="Top" Height="22" Width="100" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11" Background="#FFD6D6D6"/>
+
+        <TextBox x:Name="txtWeight1" HorizontalAlignment="Left" Height="22" Margin="526,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" TextChanged="txtWeight1_TextChanged"/>
+        <TextBox x:Name="txtWeight2" HorizontalAlignment="Left" Height="22" Margin="526,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" TextChanged="txtWeight2_TextChanged"/>
+        <TextBox x:Name="txtWeight3" HorizontalAlignment="Left" Height="22" Margin="526,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" TextChanged="txtWeight3_TextChanged"/>
+        <TextBox x:Name="txtWeight4" HorizontalAlignment="Left" Height="22" Margin="526,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" TextChanged="txtWeight4_TextChanged"/>
+        <TextBox x:Name="txtWeight5" HorizontalAlignment="Left" Height="23" Margin="526,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" TextChanged="txtWeight5_TextChanged"/>
+        <TextBox x:Name="txtWeight6" HorizontalAlignment="Left" Height="22" Margin="526,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" TextChanged="txtWeight6_TextChanged"/>
+        <TextBox x:Name="txtWeight7" HorizontalAlignment="Left" Height="22" Margin="526,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" TextChanged="txtWeight7_TextChanged"/>
+        <TextBox x:Name="txtWeight8" HorizontalAlignment="Left" Height="22" Margin="526,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" TextChanged="txtWeight8_TextChanged"/>
+
+        <TextBox x:Name="txtAngle1" HorizontalAlignment="Left" Height="22" Margin="652,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" TextChanged="txtAngle1_TextChanged"/>
+        <TextBox x:Name="txtAngle2" HorizontalAlignment="Left" Height="22" Margin="652,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" TextChanged="txtAngle2_TextChanged"/>
+        <TextBox x:Name="txtAngle3" HorizontalAlignment="Left" Height="22" Margin="652,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" TextChanged="txtAngle3_TextChanged"/>
+        <TextBox x:Name="txtAngle4" HorizontalAlignment="Left" Height="22" Margin="652,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" TextChanged="txtAngle4_TextChanged"/>
+        <TextBox x:Name="txtAngle5" HorizontalAlignment="Left" Height="23" Margin="652,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" TextChanged="txtAngle5_TextChanged"/>
+        <TextBox x:Name="txtAngle6" HorizontalAlignment="Left" Height="22" Margin="652,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" TextChanged="txtAngle6_TextChanged"/>
+        <TextBox x:Name="txtAngle7" HorizontalAlignment="Left" Height="22" Margin="652,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" TextChanged="txtAngle7_TextChanged"/>
+        <TextBox x:Name="txtAngle8" HorizontalAlignment="Left" Height="22" Margin="652,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" TextChanged="txtAngle8_TextChanged"/>
+
+        <Label x:Name="lblSummWeight" HorizontalAlignment="Left" Margin="526,345,0,0" VerticalAlignment="Top" 
+               Height="22" Width="123" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11" Background="#FFFF7943" IsEnabled="False"/>
+        <Label x:Name="lblSummAngle" HorizontalAlignment="Left" Margin="652,345,0,0" VerticalAlignment="Top" 
+               Height="22" Width="123" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11" Background="#FFFF7943"/>
+
+        <Button x:Name="btnClose" Content="Закрыть" HorizontalAlignment="Left" Margin="637,453,0,0" 
+                VerticalAlignment="Top" Width="138" Height="47" FontSize="14" Foreground="White" FontFamily="Arial" Click="btnClose_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" 
+                                     StartPoint="0.5,0">
+                    <GradientStop Color="#FF295A84" Offset="1"/>
+                    <GradientStop Color="#FF366094"/>
+                    <GradientStop Color="#FF295A84" Offset="0.5"/>
+                    <GradientStop Color="#FF588DBD" Offset="0.499"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnTurnToSetWeight" HorizontalAlignment="Left" Margin="397,453,0,0"
+                VerticalAlignment="Top" Width="138" Height="47" FontSize="12" Foreground="White" 
+                FontFamily="Arial">
+            <Button.Content>
+                <TextBlock TextAlignment="Center" TextWrapping="Wrap">Довернуть до угла установки</TextBlock>
+            </Button.Content>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF295A84" Offset="1"/>
+                    <GradientStop Color="#FF366094"/>
+                    <GradientStop Color="#FF295A84" Offset="0.5"/>
+                    <GradientStop Color="#FF588DBD" Offset="0.499"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+        <Label x:Name="lblCurrentAngle" Content="Текущий угол:" HorizontalAlignment="Left" 
+               Margin="114,463,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White" FontFamily="Arial"/>
+        <TextBox x:Name="txtCurrentAngle" HorizontalAlignment="Left" Height="30" 
+                 Margin="217,462,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" 
+                 FontWeight="Bold" FontSize="18" TextAlignment="Center"/>
+        <Button x:Name="btnSummWeight" HorizontalAlignment="Left" Margin="397,345,0,0"
+                VerticalAlignment="Top" Width="127" Height="22" FontSize="11" Foreground="White" 
+                FontFamily="Arial" Click="btnSummWeight_Click">
+            <Button.Content>
+                <TextBlock TextAlignment="Center" TextWrapping="Wrap">Суммарный вес</TextBlock>
+            </Button.Content>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF295A84" Offset="1"/>
+                    <GradientStop Color="#FF366094"/>
+                    <GradientStop Color="#FF295A84" Offset="0.5"/>
+                    <GradientStop Color="#FF588DBD" Offset="0.499"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label  x:Name="lblOutput" HorizontalAlignment="Left" Height="233" Margin="29,148,0,0" VerticalAlignment="Top" Width="331"/>
+
+
+
+    </Grid>
+</Window>
